@@ -21,3 +21,56 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "site"
+    label: "Site"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "site/home/home.json"
+        fields:
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - label: "Section One"
+            name: "sectionOne"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "BG", name: "bg", widget: "image" }
+              - { label: "BG 2", name: "bg2", widget: "image" }
+          - label: "Section Two"
+            name: "sectionTwo"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "BG", name: "bg", widget: "image" }
+              - { label: "BG 2", name: "bg2", widget: "image" }
+          - label: "Section Three"
+            name: "sectionThree"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "BG", name: "bg", widget: "image" }
+          - label: "Section Four"
+            name: "sectionFour"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "BG", name: "bg", widget: "image" }
+          - label: "Section Five"
+            name: "sectionFive"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+              - { label: "BG", name: "bg", widget: "image" }
+          - {
+              label: "Footer Hero Image",
+              name: "footerHeroImage",
+              widget: "image",
+            }
+          - { label: "Splash BG 1", name: "splashBg1", widget: "image" }
+          - { label: "Splash BG 2", name: "splashBg2", widget: "image" }
