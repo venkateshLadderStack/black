@@ -18,7 +18,7 @@ const Section1 = ({ data }) => {
             <p>{data?.description}</p>
           </div>
         </div>
-        <div className="col-sm-12 col-md-5 text-center">
+        <div className="col-sm-12 col-md-5 d-flex justify-content-center align-items-center">
           <img src={data?.bg2} className="sc1_bg2" />
         </div>
       </div>
