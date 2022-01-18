@@ -1,28 +1,32 @@
 import * as React from "react"
 
 import "../styles/globalStyles.css"
-import home from "../../site/home/home.json"
-import Hero from "../components/Home/Hero"
-import Section1 from "../components/Home/Section1"
-import Section2 from "../components/Home/Section2"
-import Section3 from "../components/Home/Section3"
-import Section4 from "../components/Home/Section4"
-import Section5 from "../components/Home/Section5"
-import Layout from "../components/layout"
+import home from "../../site/home/landing.json"
 
 const IndexPage = () => {
   return (
-    <Layout splash={home?.splashBg1}>
-      <div className="wrapper">
-        <Hero heroImage={home?.heroImage} />
-        <Section1 data={home?.sectionOne} />
-        <Section2 data={home?.sectionTwo} />
-        <Section3 data={home?.sectionThree} />
-        <Section4 data={home?.sectionFour} />
-        <Section5 data={home?.sectionFive} />
-        <Hero heroImage={home?.footerHeroImage} isHero={false} />
-      </div>
-    </Layout>
+    <div className="wrapper">
+      <div
+        style={{
+          backgroundImage: `url(${home?.splashBg1})`,
+          width: "100vw",
+          height: "100vh",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+      />
+      <div
+        style={{
+          backgroundImage: `url(${home?.splashBg2})`,
+          width: "100vw",
+          height: "100vh",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+      />
+    </div>
   )
 }
 
