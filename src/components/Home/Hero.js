@@ -5,8 +5,14 @@ const Hero = ({ heroImage, isHero = true }) => {
   return (
     <section style={{ overflow: "hidden" }}>
       <div className="row">
+        <div
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            width: "100%",
+            height: "100%",
+          }}
+        />
         <div className="col-12 hero_img_wrapper">
-          <img src={heroImage} alt="" className="hero_img" />
           {isHero && <img src={ArrowDown} alt="" className="arr_dwn" />}
         </div>
       </div>
