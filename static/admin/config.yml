@@ -21,6 +21,15 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "bg"
+    label: BG
+    files:
+      - label: "Home"
+        name: "home"
+        file: "site/home/landing.json"
+        fields:
+          - { label: "Splash BG 1", name: "splashBg1", widget: "image" }
+          - { label: "Splash BG 2", name: "splashBg2", widget: "image" }
 
   - name: "site"
     label: "Site"
