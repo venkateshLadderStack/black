@@ -8,7 +8,7 @@ body {
 section {
   width: 100%;
   max-width: 1280px;
-  height: 720px;
+  height: 710px;
   margin: 0 auto;
 }
 
@@ -42,7 +42,7 @@ section {
   height: 18px;
   width: 30px;
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 49%;
 }
 
