@@ -7,16 +7,18 @@ const Section1 = ({ data }) => {
         backgroundImage: `url(${data?.bg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="row">
-        <div className="col-7">
+        <div className="col-sm-12 col-md-7">
           <div className="text_wrapper">
             <h2>{data?.title}</h2>
             <p>{data?.description}</p>
           </div>
         </div>
-        <div className="col-5 text-center">
+        <div className="col-sm-12 col-md-5 text-center">
           <img src={data?.bg2} className="sc1_bg2" />
         </div>
       </div>

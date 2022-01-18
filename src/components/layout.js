@@ -16,7 +16,13 @@ const Layout = ({ children, splash }) => {
       ) : (
         <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
           <img
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              backgroundPosition: "center center",
+              backgroundRepeat: "no-repeat",
+            }}
             src={splash}
             alt=""
           />

@@ -15,9 +15,11 @@ const Section5 = ({ data }) => {
             width: "100%",
             height: "100%",
             opacity: 0.5,
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
           }}
         />
-        <div className="col-12 text-center d-flex justify-content-center">
+        <div className="col-sm-12 text-center d-flex justify-content-center">
           <div className="text_wrapper_sc5">
             <h2>{data?.title}</h2>
             <p>{data?.description}</p>

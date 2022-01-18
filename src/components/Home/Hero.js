@@ -10,6 +10,8 @@ const Hero = ({ heroImage, isHero = true }) => {
             backgroundImage: `url(${heroImage})`,
             width: "100%",
             height: "100%",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
           }}
         />
         <div className="col-12 hero_img_wrapper">
