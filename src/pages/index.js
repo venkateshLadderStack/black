@@ -11,10 +11,9 @@ const IndexPage = () => {
           backgroundImage: `url(${home?.splashBg1})`,
           width: "100vw",
           height: "100vh",
-          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPositionY: "inherit",
+          backgroundPosition: "bottom",
         }}
       />
     </div>
