@@ -52,10 +52,62 @@ html body {
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .irish {
+    /* background-image: url("../images/mb-bg.png"); */
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .subscribe-area {
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .subscribe-area p {
+    font-size: 15px;
+  }
+  .subscribe input {
+    width: 210px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 3px solid #d59f38;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    font-family: "Berthold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    color: #fff;
+  }
+  .subscribe button {
+    background: #195f34;
+    border: 2px solid #d59f38;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 105px;
+    height: 44px;
+    font-family: "Berthold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    margin-left: 1px;
+    cursor: pointer;
+  }
+  .subscribe-area img {
+    width: 280px;
+  }
 }
 
 /* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .irish {
     /* background-image: url("../images/mb-bg.png"); */
     background-position: center center;
@@ -119,7 +171,7 @@ html body {
   }
   .confirmation p {
     max-width: 392px;
-    height: 63px;
+    height: auto;
     font-family: "Berthold";
     font-style: normal;
     font-weight: bold;
@@ -132,9 +184,9 @@ html body {
   }
 }
 
-/* SM Small Device :550px. */
+/* SM Small Device :550px.
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-}
+} */
 
 @keyframes draw-in {
   to {

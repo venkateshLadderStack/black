@@ -174,7 +174,7 @@ html body {
 }
 .confirmation p {
   max-width: 392px;
-  height: 63px;
+  height: auto;
   font-family: "Berthold";
   font-style: normal;
   font-weight: bold;
