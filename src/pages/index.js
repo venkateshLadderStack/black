@@ -37,13 +37,11 @@ const IndexPage = () => {
     <Layout>
       <div
         className="irish"
-         style={{
+        style={{
           backgroundImage: `url(${
-            (width > 768 &&
-              LargeBg) ||
-            (width < 768 &&
-              LargeBg)
-          })`
+            (width > 768 && LargeBg) || (width < 768 && LargeBg)
+          })`,
+        }}
       >
         <div className="subscribe-area">
           <div className="signature-img">
