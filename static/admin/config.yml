@@ -28,7 +28,11 @@ collections:
         name: "home"
         file: "site/home/landing.json"
         fields:
-          - { label: "Splash BG 1", name: "splashBg1", widget: "image" }
+          - { label: "Home Bg Large", name: "largeBg", widget: "image" }
+          - { label: "Home Bg small", name: "smallBg", widget: "image" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Popup Bg Large", name: "popupBgLarge", widget: "image" }
+          - { label: "Popup Bg Small", name: "popupBgSmall", widget: "image" }
 
   - name: "site"
     label: "Site"
