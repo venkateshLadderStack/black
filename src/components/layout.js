@@ -4,12 +4,13 @@ import "../styles/style.css"
 import "../styles/responsive.css"
 import AgeConfirmPopup from "./AgeConfirmPopup"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, loadAnim }) => {
   const [age, setAge] = useState(false)
 
   const handleSubmitAge = e => {
     e.preventDefault()
     setAge(true)
+    loadAnim()
   }
 
   return (

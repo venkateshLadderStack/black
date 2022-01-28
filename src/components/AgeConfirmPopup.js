@@ -13,7 +13,7 @@ const AgeConfirmPopup = ({ handleSubmitAge }) => {
         className="confirm"
         style={{
           backgroundImage: `url(${
-            (width > 768 && LargeBg) || (width < 768 && LargeBg)
+            (width > 768 && LargeBg) || (width < 768 && SmallBg)
           })`,
         }}
       >
