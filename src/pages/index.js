@@ -27,20 +27,15 @@ const IndexPage = () => {
   return (
     <Layout>
       <div
-        className="irish"
         style={{
           backgroundImage: `url(${
             (width > 768 && LargeBg) || (width < 768 && SmallBg)
           })`,
-
           width: "100vw",
           height: "100vh",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "top",
-        }}
-        onLoad={() => {
-          setStartAnim(true)
         }}
       >
         <div className="subscribe-area">

@@ -64,6 +64,8 @@ html body {
   }
 
   .subscribe-area {
+    position: absolute;
+    bottom: 0;
     margin-bottom: 50px;
     margin-left: 20px;
   }
@@ -119,6 +121,8 @@ html body {
     width: 100%;
   }
   .subscribe-area {
+    position: absolute;
+    bottom: 0;
     margin-bottom: 50px;
     margin-left: 20px;
   }
