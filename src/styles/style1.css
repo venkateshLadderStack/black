@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body.irish {
+  background-image: url(../img/bg.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.signature-img svg {   
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 700px;
+}
+.subscribe-area {
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+.subscribe-area p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  margin-bottom: 7px;
+}
+.subscribe input {
+  width: 300px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 3px solid #D59F38;
+  box-sizing: border-box;
+  border-radius: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+.subscribe button {
+  background: #195F34;
+  border: 2px solid #D59F38;
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 143px;
+  height: 60px;
+  transition: 0.3s;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+  margin-left: 6px;
+    cursor: pointer;
+}
+.subscribe button:hover {
+	background: #D59F38;
+	border-color: #195F34;
+}
+
+
+/* confirm-page */
+body.confirm {
+  background-image: url(../img/bg2.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  text-align: center;
+}
+.confirmation a img {
+  margin-top: 25px;
+}
+.confirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.confirm-btn-part h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.confirm-btn-part a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  width: 131px;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  border: 2px solid;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 10px;
+}
+.confirm-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.yes-btn {
+  border-color: #195F34 !important;
+  background: #D59F38;
+}
+.no-btn {
+  background: #195F34;
+  border-color: #D59F38 !important;
+}
+.confirmation p {
+  max-width: 392px;
+  height: 63px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1E2722;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.confirm-btn-part a.yes-btn:hover {
+  background: #195F34;
+  border-color: #D59F38 !important;
+}
+.confirm-btn-part a.no-btn:hover {
+  background: #D59F38;
+  border-color: #195F34 !important;
+}

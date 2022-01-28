@@ -26,7 +26,6 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      {/* <BackgroundImage Tag="div" {...bgImage} preserveStackingContext> */}
       <div
         className="irish"
         style={{
@@ -38,7 +37,7 @@ const IndexPage = () => {
           height: "100vh",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "bottom",
+          backgroundPosition: "top",
         }}
         onLoad={() => {
           setStartAnim(true)
@@ -48,12 +47,11 @@ const IndexPage = () => {
           {startAnim && <Signature startAnim={startAnim} />}
           <p>Sign Up Now For More Information</p>
           <form action="" className="subscribe">
-            <input type="email" placeholder="abc@xyz.com" />
-            <button type="submit">Subscribe</button>
+            <input type="email" placeholder="Email Address" />
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
-      {/* </BackgroundImage> */}
     </Layout>
   )
 }
