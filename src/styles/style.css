@@ -79,9 +79,10 @@
   width: 100%;
   text-align: center;
 }
-.confirmation a img {
-  margin-top: 25px;
-}
+/* .confirmation a img {
+  
+  object-fit: contain;
+} */
 .confirmation {
   display: flex;
   align-items: center;
@@ -181,4 +182,10 @@
 
 #heart-2 {
   animation: draw-in 0.4s 3.6s cubic-bezier(0.37, 0, 0.63, 1) both;
+}
+
+.logo_wrap {
+  width: 250px;
+  height: 250px;
+  margin-top: 25px;
 }
