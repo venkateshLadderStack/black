@@ -1,33 +1,20 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
+import "../styles/globalStyles.css"
+import "../styles/style.css"
+import "../styles/responsive.css"
+import AgeConfirmPopup from "./AgeConfirmPopup"
 
-const Layout = ({ children, splash }) => {
-  const [load, setLoad] = useState(false)
+const Layout = ({ children }) => {
+  const [age, setAge] = useState(false)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(true)
-    }, 2000)
-  }, [])
+  const handleSubmitAge = e => {
+    e.preventDefault()
+    setAge(true)
+  }
 
   return (
     <>
-      {load ? (
-        children
-      ) : (
-        <div style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              backgroundPosition: "center center",
-              backgroundRepeat: "no-repeat",
-            }}
-            src={splash}
-            alt=""
-          />
-        </div>
-      )}
+      {age ? children : <AgeConfirmPopup handleSubmitAge={handleSubmitAge} />}
     </>
   )
 }
