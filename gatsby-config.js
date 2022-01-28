@@ -9,16 +9,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [
-          `poppins\:300,400,500,700`,
-          `source sans pro\:300,400,500,700`, // you can also specify font weights and styles
-        ],
-        display: "swap",
-      },
-    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

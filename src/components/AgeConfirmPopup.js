@@ -69,7 +69,7 @@ const AgeConfirmPopup = ({ handleSubmitAge }) => {
             </a>
 
             <div className="confirm-btn-part">
-              <h3>ARE YOU Over 21?</h3>
+              <h3>Are you Over 21?</h3>
               <div className="confirm-btn">
                 <a href="#" className="yes-btn" onClick={handleSubmitAge}>
                   Yes

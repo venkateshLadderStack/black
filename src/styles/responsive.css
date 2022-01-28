@@ -1,3 +1,47 @@
+@font-face {
+  font-family: "Berthold";
+  src: url("../fonts/bag.ttf");
+  font-weight: regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berthold";
+  src: url("../fonts/bag-bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berthold";
+  src: url("../fonts/bag-condensed.ttf");
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berthold";
+  src: url("../fonts/bag-extra-bold.ttf");
+  font-weight: extra-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Berthold";
+  src: url("../fonts/bag-bold-condensed.ttf");
+  font-weight: semi-bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html body {
+  font-family: "Berthold";
+}
+
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1449px) {
 }
@@ -37,7 +81,7 @@
     box-sizing: border-box;
     border-radius: 50px;
     text-align: center;
-    font-family: Roboto;
+    font-family: "Berthold";
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -51,7 +95,7 @@
     border-radius: 50px;
     width: 105px;
     height: 44px;
-    font-family: Roboto;
+    font-family: "Berthold";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -76,7 +120,7 @@
   .confirmation p {
     max-width: 392px;
     height: 63px;
-    font-family: Roboto;
+    font-family: "Berthold";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
