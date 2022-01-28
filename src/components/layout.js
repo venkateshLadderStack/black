@@ -10,7 +10,6 @@ const Layout = ({ children, loadAnim }) => {
   const handleSubmitAge = e => {
     e.preventDefault()
     setAge(true)
-    loadAnim()
   }
 
   return (

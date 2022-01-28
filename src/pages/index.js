@@ -14,58 +14,18 @@ import Signature from "../components/Signature"
 const IndexPage = () => {
   const { width } = useWindowSize()
 
-  const data = useStaticQuery(
-    graphql`
-      query {
-        placeholderImage: file(relativePath: { eq: "bg.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              width: 1280
-              placeholder: NONE
-              formats: [WEBP]
-              quality: 70
-              webpOptions: { quality: 70 }
-            )
-          }
-        }
-        mobileImage: file(relativePath: { eq: "mb-bg.png" }) {
-          childImageSharp {
-            gatsbyImageData(
-              width: 480
-              placeholder: NONE
-              formats: [WEBP]
-              quality: 80
-              webpOptions: { quality: 70 }
-            )
-          }
-        }
-      }
-    `
-  )
-
-  const image = getImage(data?.placeholderImage)
-  const mbImage = getImage(data?.mobileImage)
-
   const [startAnim, setStartAnim] = useState(false)
-  const [bg, setBg] = useState(image)
-
   const loadAnim = () =>
     setTimeout(() => {
       setStartAnim(true)
-    }, 1250)
+    }, 2500)
 
   useEffect(() => {
-    if (width <= 767) {
-      setBg(mbImage)
-    } else {
-      setBg(image)
-    }
-  }, [width])
-
-  const bgImage = convertToBgImage(bg)
+    loadAnim()
+  }, [])
 
   return (
-    <Layout loadAnim={loadAnim}>
+    <Layout>
       {/* <BackgroundImage Tag="div" {...bgImage} preserveStackingContext> */}
       <div
         className="irish"
@@ -79,6 +39,9 @@ const IndexPage = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "bottom",
+        }}
+        onLoad={() => {
+          setStartAnim(true)
         }}
       >
         <div className="subscribe-area">
