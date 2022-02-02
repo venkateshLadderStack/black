@@ -52,28 +52,28 @@ const IndexPage = () => {
             <div className="d-flex flex-row mt-3 ">
               <a
                 target="_blank"
-                className="text-white mx-2"
+                className="text-white social_icon mx-2"
                 href="https://www.facebook.com/goblackirish/"
               >
                 <FontAwesomeIcon icon={faFacebookF} size="2x" />
               </a>
               <a
                 target="_blank"
-                className="text-white mx-2"
+                className="text-white social_icon mx-2"
                 href="https://www.instagram.com/goblackirish/"
               >
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
               <a
                 target="_blank"
-                className="text-white mx-2"
+                className="text-white social_icon mx-2"
                 href="https://twitter.com/goblackirish?lang=en"
               >
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
               </a>
               <a
                 target="_blank"
-                className="text-white mx-2"
+                className="text-white social_icon mx-2"
                 href="https://www.tiktok.com/@goblackirish"
               >
                 <FontAwesomeIcon icon={faTiktok} size="2x" />
