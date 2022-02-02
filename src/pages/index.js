@@ -9,6 +9,13 @@ import MailchimpForm from "../components/SubscribeForm"
 import Seo from "../components/seo"
 import { Helmet } from "react-helmet"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faInstagram,
+  faTwitter,
+  faFacebookF,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons"
 const IndexPage = () => {
   const { width } = useWindowSize()
 
@@ -42,6 +49,36 @@ const IndexPage = () => {
             {startAnim && <Signature startAnim={startAnim} />}
             <p>Sign Up Now For More Information</p>
             <MailchimpForm />
+            <div className="d-flex flex-row mt-3 ">
+              <a
+                target="_blank"
+                className="text-white mx-2"
+                href="https://www.facebook.com/goblackirish/"
+              >
+                <FontAwesomeIcon icon={faFacebookF} size="2x" />
+              </a>
+              <a
+                target="_blank"
+                className="text-white mx-2"
+                href="https://www.instagram.com/goblackirish/"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="2x" />
+              </a>
+              <a
+                target="_blank"
+                className="text-white mx-2"
+                href="https://twitter.com/goblackirish?lang=en"
+              >
+                <FontAwesomeIcon icon={faTwitter} size="2x" />
+              </a>
+              <a
+                target="_blank"
+                className="text-white mx-2"
+                href="https://www.tiktok.com/@goblackirish"
+              >
+                <FontAwesomeIcon icon={faTiktok} size="2x" />
+              </a>
+            </div>
           </div>
         </div>
       </Layout>
