@@ -301,6 +301,36 @@ section {
   }
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+* {
+  font-family: Roboto;
+}
 .social_icon:hover {
   opacity: 0.7;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav_group {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav_item a {
+  color: #1e2722;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+  margin: 10px;
 }

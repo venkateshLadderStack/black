@@ -1,0 +1,26 @@
+.green {
+  background: #195f34;
+  width: 161px;
+  height: 45px;
+  border: 1px solid #2c9a42;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 31px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0px 17px;
+}
+.orange {
+  color: #de8b05;
+  border: 1px solid #de8b05;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 31px;
+  width: 161px;
+  height: 45px;
+  background: transparent;
+  margin: 0px 17px;
+  font-size: 18px;
+  font-weight: 800;
+}

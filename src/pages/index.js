@@ -16,6 +16,9 @@ import {
   faFacebookF,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons"
+import Navbar from "../components/Navbar/Navbar"
+import Banner from "../components/Banner"
+
 const IndexPage = () => {
   const { width } = useWindowSize()
 
@@ -33,12 +36,13 @@ const IndexPage = () => {
     <>
       <Seo title="Black Irish" description="Black Irish" />
       <Layout>
+        <Navbar />
         <div
           style={{
             backgroundImage: `url(${
               (width > 768 && LargeBg) || (width < 768 && SmallBg)
             })`,
-            width: "100vw",
+            width: "98.9vw",
             height: "100vh",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -81,6 +85,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <Banner />
       </Layout>
     </>
   )
