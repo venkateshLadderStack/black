@@ -1,6 +1,12 @@
+.contentArea {
+  position: absolute;
+  bottom: 0;
+}
+
 .content {
   display: flex;
   flex-direction: row;
+  width: auto;
   justify-content: space-between;
   align-items: center;
 }

@@ -322,8 +322,11 @@ section {
   display: flex;
   flex-direction: row;
   list-style: none;
+  margin-top: 8px;
 }
-
+.nav_item {
+  margin: 5px 20px;
+}
 .nav_item a {
   color: #1e2722;
   font-family: Roboto;
@@ -333,4 +336,47 @@ section {
   line-height: 18px;
   text-decoration: none;
   margin: 10px;
+}
+
+.slide_nav {
+  width: 90%;
+  background: linear-gradient(
+    0deg,
+    rgba(25, 95, 52, 0.9),
+    rgba(25, 95, 52, 0.9)
+  );
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 25px 25px 0px;
+  position: fixed;
+  height: 100%;
+  z-index: 99999;
+  top: 0;
+  left: -100%;
+  transition: 1s;
+}
+
+.slide_nav.active {
+  left: 0;
+}
+
+@media screen and (max-width: 1055px) {
+  .nav_item {
+    margin: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    display: none;
+  }
+  .mobile_nav {
+    display: flex;
+    height: 100px;
+    align-items: center;
+  }
+  .mobile_logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
 }

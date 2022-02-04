@@ -38,11 +38,12 @@ const IndexPage = () => {
       <Layout>
         <Navbar />
         <div
+          className="container-fluid"
           style={{
             backgroundImage: `url(${
               (width > 768 && LargeBg) || (width < 768 && SmallBg)
             })`,
-            width: "98.9vw",
+            width: "auto",
             height: "100vh",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -85,6 +86,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+
         <Banner />
       </Layout>
     </>
