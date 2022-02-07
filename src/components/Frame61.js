@@ -23,10 +23,10 @@ function Frame61() {
   return (
     <>
       {data.allFile.edges.map(({ node }) => (
-        <div className="col-lg-2 col-md-12 col-sm-12 my-2 ms-5">
+        <div className="col-lg-2 col-md-12 col-sm-12 my-2 ">
           <>
             <Img
-              style={{ maxWidth: "200px" }}
+              style={{ maxWidth: "161px" }}
               fluid={node.childImageSharp.fluid}
               alt={node.base}
             />
