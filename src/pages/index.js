@@ -24,6 +24,7 @@ import Poster from "../components/Poster"
 import Frame6 from "../components/Frame6"
 import Frame7 from "../components/Frame7"
 import Footer from "../components/Navbar/Footer"
+import Frame61 from "../components/Frame61"
 
 const IndexPage = () => {
   const { width } = useWindowSize()
@@ -103,7 +104,20 @@ const IndexPage = () => {
           <Poster />
         </div>
         <div className="my-5">
-          <Frame6 />
+          <div className="container-fluid">
+            <div className="row ">
+              <div className="col-lg-12 col-md-6 col-sm-6">
+                <div className="row d-flex justify-content-center align-items-center">
+                  <Frame6 />
+                </div>
+              </div>
+              <div className="col-lg-12 col-md-6 col-sm-6">
+                <div className="row d-flex justify-content-center align-items-center">
+                  <Frame61 />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="my-5">
           <Frame7 />
