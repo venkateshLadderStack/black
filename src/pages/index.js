@@ -18,6 +18,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import Navbar from "../components/Navbar/Navbar"
 import Banner from "../components/Banner"
+import Section from "../components/Section"
+import Frame5 from "../components/Frame5"
+import Poster from "../components/Poster"
+import Frame6 from "../components/Frame6"
+import Frame7 from "../components/Frame7"
+import Footer from "../components/Navbar/Footer"
 
 const IndexPage = () => {
   const { width } = useWindowSize()
@@ -36,8 +42,7 @@ const IndexPage = () => {
     <>
       <Seo title="Black Irish" description="Black Irish" />
       <Layout>
-        <Navbar />
-        <div
+        {/* <div
           className="container-fluid"
           style={{
             backgroundImage: `url(${
@@ -85,9 +90,25 @@ const IndexPage = () => {
               </a>
             </div>
           </div>
-        </div>
-
+        </div> */}
+        <Navbar />
         <Banner />
+        <div className="my-5">
+          <Section />
+        </div>
+        <div className="my-5">
+          <Frame5 />
+        </div>
+        <div className="my-5">
+          <Poster />
+        </div>
+        <div className="my-5">
+          <Frame6 />
+        </div>
+        <div className="my-5">
+          <Frame7 />
+        </div>
+        <Footer />
       </Layout>
     </>
   )

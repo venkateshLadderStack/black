@@ -1,0 +1,48 @@
+.contentArea {
+  position: absolute;
+  height: 248px;
+  width: 644px;
+  top: 23%;
+  left: 23%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentArea h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #de8b05;
+}
+.contentArea p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .contentArea {
+    height: 40%;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .contentArea {
+    height: 40%;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+  }
+}

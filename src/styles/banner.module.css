@@ -1,12 +1,30 @@
 .contentArea {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
+  width: 100%;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  width: auto;
   justify-content: space-between;
   align-items: center;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 851px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: flex-end;
+  }
+  .button {
+    margin-right: 10px;
+    justify-content: center;
+  }
 }

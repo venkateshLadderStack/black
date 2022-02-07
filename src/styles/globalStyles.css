@@ -310,6 +310,19 @@ section {
   opacity: 0.7;
 }
 
+.nav_logo {
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.nav_links {
+  position: absolute;
+  left: 25%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: red;
+  margin-top: 10px;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -335,7 +348,7 @@ section {
   font-size: 15px;
   line-height: 18px;
   text-decoration: none;
-  margin: 10px;
+  margin: 0px 8px;
 }
 
 .slide_nav {
@@ -352,31 +365,81 @@ section {
   z-index: 99999;
   top: 0;
   left: -100%;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .slide_nav.active {
   left: 0;
 }
+.mobile_nav {
+  display: none;
+}
+
+.nav_mobile_links {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.nav_mobile_item {
+  margin: 25px 0px;
+}
+.nav_mobile_item a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.mobile_social_icon {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1290px) {
+  .nav_links {
+    left: 20%;
+  }
+}
 
 @media screen and (max-width: 1055px) {
+  .nav_links {
+    left: 25%;
+  }
   .nav_item {
     margin: 5px 5px;
   }
 }
 
-@media screen and (max-width: 850px) {
-  .navbar {
+@media screen and (max-width: 950px) {
+  .mobile_nav {
+    display: block;
+    position: absolute;
+  }
+  .nav_content {
     display: none;
   }
-  .mobile_nav {
+  .nav_logo {
     display: flex;
-    height: 100px;
+    position: relative;
     align-items: center;
-  }
-  .mobile_logo {
-    display: flex;
     width: 100%;
     justify-content: center;
+    transition: all 0.5s ease-out;
+  }
+  .fa_times {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
   }
 }

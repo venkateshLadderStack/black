@@ -9,7 +9,7 @@
   color: #ffffff;
   font-size: 15px;
   font-weight: 800;
-  margin: 0px 17px;
+  margin: 0 5px 0;
 }
 .orange {
   color: #de8b05;
@@ -20,7 +20,15 @@
   width: 161px;
   height: 45px;
   background: transparent;
-  margin: 0px 17px;
   font-size: 15px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 350px) {
+  .orange {
+    width: 141px;
+  }
+  .green {
+    width: 141px;
+  }
 }

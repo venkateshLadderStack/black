@@ -4,9 +4,7 @@ import * as btn from "../styles/button.module.css"
 const Button = ({ classN, name }) => {
   return (
     <>
-      <div>
-        <button className={classN ? btn.green : btn.orange}>{name}</button>
-      </div>
+      <button className={classN ? btn.green : btn.orange}>{name}</button>
     </>
   )
 }

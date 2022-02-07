@@ -13,6 +13,7 @@
     "formik": "^2.2.9",
     "gatsby": "^4.5.3",
     "gatsby-background-image": "^1.6.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-gatsby-cloud": "^4.5.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.5.2",

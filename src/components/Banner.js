@@ -20,8 +20,10 @@ const Banner = () => {
       >
         <div className={banner.contentArea}>
           <div className={banner.content}>
-            <img src={sign_img} width={390} height={163} alt="" />
-            <div className="d-flex flex-row">
+            <div className={banner.sign_img}>
+              <img src={sign_img} width={330} height={163} alt="" />
+            </div>
+            <div className={banner.button}>
               <Button name="Learn more" />
               <Button classN="green" name="Where to Find Us" />
             </div>
