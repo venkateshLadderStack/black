@@ -1,8 +1,11 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import useWindowSize from "../../hooks/useWindowSize"
 
 function Frame61() {
+  const { width } = useWindowSize()
+
   const data = useStaticQuery(graphql`
     query two {
       allFile(filter: { relativeDirectory: { eq: "set2" }, relativePath: {} }) {
@@ -22,17 +25,25 @@ function Frame61() {
 
   return (
     <>
-      {data.allFile.edges.map(({ node }) => (
-        <div className="col-lg-2 col-md-12 col-sm-12 my-2 ">
-          <>
-            <Img
-              style={{ maxWidth: "220px" }}
-              fluid={node.childImageSharp.fluid}
-              alt={node.base}
-            />
-          </>
-        </div>
-      ))}
+      <div className="row d-flex justify-content-between">
+        {data.allFile.edges.map(({ node }) => (
+          <div className="col-lg-2 col-md-12 col-sm-12 col-12 my-2">
+            <>
+              <Img
+                style={
+                  width < 600
+                    ? width < 500
+                      ? { maxWidth: "130px" }
+                      : { maxWidth: "161px" }
+                    : { maxWidth: "200px" }
+                }
+                fluid={node.childImageSharp.fluid}
+                alt={node.base}
+              />
+            </>
+          </div>
+        ))}
+      </div>
     </>
   )
 }

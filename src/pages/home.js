@@ -23,17 +23,13 @@ function home() {
           <Poster />
         </div>
         <div className="my-5">
-          <div className="container-fluid">
-            <div className="row  ">
-              <div className="col-lg-12 col-md-6 col-sm-6 ">
-                <div className="row d-flex justify-content-center align-items-center">
-                  <Frame6 />
-                </div>
+          <div className="container">
+            <div className="row ">
+              <div className="col-lg-12 col-md-6 col-sm-6 col-6">
+                <Frame6 />
               </div>
-              <div className="col-lg-12 col-md-6 col-sm-6">
-                <div className="row  d-flex justify-content-center align-items-center">
-                  <Frame61 />
-                </div>
+              <div className="col-lg-12 col-md-6 col-sm-6 col-6">
+                <Frame61 />
               </div>
             </div>
           </div>
