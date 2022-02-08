@@ -20,11 +20,13 @@ const Banner = () => {
       >
         <div className={banner.contentArea}>
           <div className={banner.content}>
-            <div className={banner.sign_img}>
+            <div className="ms-5">
               <img src={sign_img} width={330} height={163} alt="" />
             </div>
             <div className={banner.button}>
-              <Button name="Learn more" />
+              <div className="me-3">
+                <Button name="Learn more" />
+              </div>
               <Button classN="green" name="Where to Find Us" />
             </div>
           </div>

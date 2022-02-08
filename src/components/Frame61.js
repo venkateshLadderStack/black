@@ -25,7 +25,7 @@ function Frame61() {
 
   return (
     <>
-      <div className="row d-flex justify-content-between">
+      <div className="row d-flex justify-content-between align-items-center">
         {data.allFile.edges.map(({ node }) => (
           <div className="col-lg-2 col-md-12 col-sm-12 col-12 my-2">
             <>
