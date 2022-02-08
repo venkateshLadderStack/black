@@ -26,7 +26,7 @@ function Frame61() {
         <div className="col-lg-2 col-md-12 col-sm-12 my-2 ">
           <>
             <Img
-              style={{ maxWidth: "161px" }}
+              style={{ maxWidth: "220px" }}
               fluid={node.childImageSharp.fluid}
               alt={node.base}
             />

@@ -405,6 +405,14 @@ section {
   bottom: 0;
 }
 
+.custom_row {
+  width: 100%;
+}
+
+.custom_col {
+  width: 50%;
+}
+
 @media screen and (max-width: 1290px) {
   .nav_links {
     left: 20%;

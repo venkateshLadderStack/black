@@ -36,7 +36,7 @@ const navLinks = [
   },
 ]
 
-const Navbar = () => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <>
@@ -152,4 +152,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header

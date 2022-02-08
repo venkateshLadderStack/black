@@ -1,7 +1,30 @@
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
+const imgs = [
+  {
+    src: "../images/company.png",
+    name: "company",
+  },
+  {
+    src: "../images/company1.png",
+    name: "company1",
+  },
+  {
+    src: "../images/company2.png",
+    name: "company2",
+  },
+  {
+    src: "../images/company3.png",
+    name: "company3",
+  },
+  {
+    src: "../images/company4.png",
+    name: "company4",
+  },
+]
 function Frame6() {
   const data = useStaticQuery(graphql`
     query one {
