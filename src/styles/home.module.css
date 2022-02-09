@@ -31,6 +31,9 @@
 .image {
   margin-right: 20px;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .frame5 {
@@ -58,6 +61,13 @@
   }
   .image {
     width: 100%;
+  }
+  .frame5 {
+    flex-direction: column !important;
+  }
+  .frame {
+    width: 100%;
+    margin: 15px 0;
   }
 }
 

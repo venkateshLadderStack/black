@@ -1,7 +1,10 @@
 import React from "react"
 import * as home from "../styles/home.module.css"
 import Button from "./Button"
-import { Image } from "./ImageComponent"
+import useWindowSize from "../../hooks/useWindowSize"
+import homeImg from "../images/home_img.png"
+import homeImg2 from "../images/home_img2.png"
+
 const content = [
   {
     title: "LOREM ISPUM",
@@ -11,6 +14,7 @@ const content = [
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.`,
+    img: homeImg,
   },
   {
     title: "LOREM ISPUM",
@@ -20,9 +24,12 @@ const content = [
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.`,
+    img: homeImg2,
   },
 ]
+
 const Section = () => {
+  const { width } = useWindowSize()
   return (
     <>
       <div className="container">
@@ -38,7 +45,28 @@ const Section = () => {
               }
             >
               <div className={home.image}>
-                <Image />
+                <img
+                  src={item.img}
+                  width={
+                    width < 350
+                      ? 300
+                      : width < 450
+                      ? 420
+                      : width < 881
+                      ? 400
+                      : 540.45
+                  }
+                  height={
+                    width < 400
+                      ? 177.62
+                      : width < 450
+                      ? 247.8
+                      : width < 881
+                      ? 236
+                      : 320
+                  }
+                  alt="home"
+                />
               </div>
               <div className={home.content}>
                 <h1>{item.title}</h1>

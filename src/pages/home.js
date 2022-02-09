@@ -7,6 +7,7 @@ import Poster from "../components/Poster"
 import Frame6 from "../components/Frame6"
 import Frame7 from "../components/Frame7"
 import Frame61 from "../components/Frame61"
+import InstaFeed from "../components/InstaFeed"
 
 function home() {
   return (
@@ -36,6 +37,9 @@ function home() {
         </div>
         <div className="my-5">
           <Frame7 />
+        </div>
+        <div className="my-5">
+          <InstaFeed />
         </div>
       </Layout>
     </>

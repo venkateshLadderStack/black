@@ -303,6 +303,10 @@ section {
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
 
+html body {
+  background: #fefef6 !important;
+}
+
 * {
   font-family: Roboto;
 }
@@ -316,7 +320,7 @@ section {
 }
 .nav_links {
   position: absolute;
-  left: 25%;
+  left: 8%;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -415,13 +419,13 @@ section {
 
 @media screen and (max-width: 1290px) {
   .nav_links {
-    left: 20%;
+    left: 10%;
   }
 }
 
 @media screen and (max-width: 1055px) {
   .nav_links {
-    left: 25%;
+    left: 10%;
   }
   .nav_item {
     margin: 5px 5px;

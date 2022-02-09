@@ -1,0 +1,16 @@
+@media screen and (max-width: 992px) {
+  .feedTwo :nth-child(3n + 3) {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 772px) {
+  .feedTwo :nth-child(2n + 2) {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .feedTwo {
+    display: none !important;
+  }
+}

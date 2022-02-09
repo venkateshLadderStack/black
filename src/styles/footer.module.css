@@ -118,6 +118,7 @@
   flex-grow: 0;
   margin: 20px 0px;
   padding: 0 7px;
+  background: transparent;
 }
 .btn {
   width: 100px;
