@@ -8,10 +8,12 @@ import Frame6 from "../components/Frame6"
 import Frame7 from "../components/Frame7"
 import Frame61 from "../components/Frame61"
 import InstaFeed from "../components/InstaFeed"
+import Seo from "../components/seo"
 
 function home() {
   return (
     <>
+      <Seo title="Home" description="Black Irish" />
       <Layout>
         <Banner />
         <div className="my-5">

@@ -8,6 +8,7 @@ import recipe3 from "../images/recipies/recipie3.png"
 import recipe4 from "../images/recipies/recipe4.png"
 import recipe5 from "../images/recipies/recipe5.png"
 import InstaFeed from "../components/InstaFeed"
+import Seo from "../components/seo"
 
 const recipesData = [
   {
@@ -113,6 +114,8 @@ const recipesData = [
 function recipes() {
   return (
     <>
+      <Seo title="Recipes" description="Black Irish" />
+
       <Layout>
         <div className={recipeStyle.recipe}>
           <div className={recipeStyle.title}>

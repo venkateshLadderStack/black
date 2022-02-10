@@ -5,6 +5,7 @@ import about2 from "../images/recipies/recipie2.png"
 import About from "../components/About/About.js"
 import * as globalStyle from "../styles/global.module.css"
 import InstaFeed from "../components/InstaFeed"
+import Seo from "../components/seo"
 
 const aboutData = [
   {
@@ -23,22 +24,25 @@ const aboutData = [
 
 function about() {
   return (
-    <Layout>
-      <>
-        <div className={globalStyle.page}>
-          <div className={globalStyle.pageTitle}>
-            <h1>About</h1>
+    <>
+      <Seo title="About" description="Black Irish" />
+      <Layout>
+        <>
+          <div className={globalStyle.page}>
+            <div className={globalStyle.pageTitle}>
+              <h1>About</h1>
+            </div>
+            <div className={globalStyle.border}></div>
           </div>
-          <div className={globalStyle.border}></div>
-        </div>
-        <div className="container my-5">
-          <About data={aboutData} />
-        </div>
-        <div className="my-5">
-          <InstaFeed />
-        </div>
-      </>
-    </Layout>
+          <div className="container my-5">
+            <About data={aboutData} />
+          </div>
+          <div className="my-5">
+            <InstaFeed />
+          </div>
+        </>
+      </Layout>
+    </>
   )
 }
 
