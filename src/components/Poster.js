@@ -1,7 +1,6 @@
 import React from "react"
 import posterImg from "../images/poster.png"
 import * as poster from "../styles/poster.module.css"
-import Button from "./Button"
 
 function Poster() {
   return (
@@ -25,7 +24,7 @@ function Poster() {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-          <Button className="mx-3" classN="green" name="Our Story" />
+          <button className={poster.green}>Our Story</button>
         </div>
       </div>
     </>

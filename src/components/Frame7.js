@@ -44,7 +44,7 @@ function Frame7() {
             </div>
           ))}
         </div>
-        <Button classN="green" name="View all recipies" />
+        <Button link="/recipes" classN="green" name="View all recipies" />
       </div>
     </>
   )

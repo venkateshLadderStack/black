@@ -46,13 +46,13 @@ function InstaFeed() {
   const { width } = useWindowSize()
   return (
     <>
-      <div className="container">
+      <div className={width < 1000 ? "container-fluid" : "container"}>
         <div className="row">
           <div className="col-lg-5 col-md-6 col-sm-8 col-12">
             <div className="row">
               {feedOne.map((item, i) => (
                 <>
-                  <div key={i} className="col-6 d-flex justify-content-center">
+                  <div key={i} className="col-6 d-flex justify-space-center">
                     <img
                       src={item.img}
                       width={width < 400 ? 150 : 200}

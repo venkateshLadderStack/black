@@ -27,8 +27,8 @@ const navLinks = [
     name: "Products",
   },
   {
-    link: "/recipies",
-    name: "Recipies",
+    link: "/recipes",
+    name: "Recipes",
   },
   {
     link: "/press",
