@@ -42,7 +42,9 @@ const Header = () => {
     <>
       <div className="navbar">
         <div className="mx-5 nav_logo">
-          <img src={logo} alt="" width={76.7} height={65} />
+          <a href="/">
+            <img src={logo} alt="" width={76.7} height={65} />
+          </a>
         </div>
         <div className="nav_content">
           <ul className="nav_links">
