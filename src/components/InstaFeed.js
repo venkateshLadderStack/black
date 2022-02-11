@@ -52,7 +52,7 @@ function InstaFeed() {
             <div className="row">
               {feedOne.map((item, i) => (
                 <>
-                  <div key={i} className="col-6 d-flex justify-space-center">
+                  <div key={i} className="col-6 d-flex justify-content-center">
                     <img
                       src={item.img}
                       width={width < 400 ? 150 : 200}

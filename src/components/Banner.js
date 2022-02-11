@@ -11,8 +11,8 @@ const Banner = () => {
     <>
       <div className={banner.vedioArea}>
         <Player
+          fluid={false}
           poster={bannerImg}
-          fluid={true}
           muted
           autoPlay={true}
           src={video}
