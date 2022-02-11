@@ -22,6 +22,12 @@
   border: 3px solid #d59f38;
   box-sizing: border-box;
   border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1e2722;
 }
 
 .input_area textarea {
@@ -31,6 +37,12 @@
   border: 3px solid #d59f38;
   box-sizing: border-box;
   border-radius: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1e2722;
 }
 
 @media screen and (max-width: 1201px) {

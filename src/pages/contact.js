@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/seo"
-import Signature from "../components/Signature"
 import * as globalStyle from "../styles/global.module.css"
 import sign_img from "../images/sign_dark.png"
 import bottle_img from "../images/bottle2.png"
 import * as contactStyle from "../styles/contact.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import * as poster from "../styles/poster.module.css"
-
 import {
   faFacebookF,
   faInstagram,
@@ -23,7 +21,6 @@ function Contact() {
 
   return (
     <>
-      {width}
       <Seo title="Contact" description="Black Irish" />
       <Layout>
         <div className={globalStyle.page}>
@@ -42,13 +39,15 @@ function Contact() {
                 alt="bottle_img"
               />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 px-1">
-              <img
-                height={width < 500 ? 131.6 : 158.83}
-                width={width < 500 ? 280 : 334.19}
-                src={sign_img}
-                alt="sign_img"
-              />
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 px-1 ">
+              <div className="d-flex justify-content-center">
+                <img
+                  height={width < 500 ? 131.6 : 158.83}
+                  width={width < 500 ? 280 : 334.19}
+                  src={sign_img}
+                  alt="sign_img"
+                />
+              </div>
               <div className="row my-1 mx-1 ">
                 <div
                   className={`col-lg-6 col-md-12 col-sm-12 col-12 ${contactStyle.input_area}`}
