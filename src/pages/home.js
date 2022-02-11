@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/Layout/Layout"
 import Banner from "../components/Banner"
 import Section from "../components/Section"
@@ -9,8 +9,12 @@ import Frame7 from "../components/Frame7"
 import Frame61 from "../components/Frame61"
 import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
+import Aos from "aos"
 
-function home() {
+const Home = () => {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <>
       <Seo title="Home" description="Black Irish" />
@@ -48,4 +52,4 @@ function home() {
   )
 }
 
-export default home
+export default Home

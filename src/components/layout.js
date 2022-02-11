@@ -5,6 +5,7 @@ import "../styles/responsive.css"
 import "react-toastify/dist/ReactToastify.css"
 import AgeConfirmPopup from "./AgeConfirmPopup"
 import { ToastContainer } from "react-toastify"
+import AOS from "aos"
 
 const Layout = ({ children, loadAnim }) => {
   const [age, setAge] = useState(false)
@@ -13,6 +14,10 @@ const Layout = ({ children, loadAnim }) => {
     e.preventDefault()
     setAge(true)
   }
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
 
   return (
     <>

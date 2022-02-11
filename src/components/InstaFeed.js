@@ -53,12 +53,14 @@ function InstaFeed() {
               {feedOne.map((item, i) => (
                 <>
                   <div key={i} className="col-6 d-flex justify-space-center">
-                    <img
-                      src={item.img}
-                      width={width < 400 ? 150 : 200}
-                      height={width < 400 ? 150 : 200}
-                      alt=""
-                    />
+                    <div data-aos="zoom-out" data-aos-duration="800">
+                      <img
+                        src={item.img}
+                        width={width < 400 ? 150 : 200}
+                        height={width < 400 ? 150 : 200}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </>
               ))}
@@ -72,7 +74,9 @@ function InstaFeed() {
                     key={i}
                     className="col-lg-4 col-md-6  d-flex justify-content-center"
                   >
-                    <img src={item.img} width={200} height={200} alt="" />
+                    <div data-aos="zoom-out" data-aos-duration="800">
+                      <img src={item.img} width={200} height={200} alt="" />
+                    </div>
                   </div>
                 </>
               ))}

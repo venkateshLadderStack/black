@@ -31,7 +31,12 @@ function Frame7() {
         <p>OUR FAVORITE WAYS TO ENJOY BLACK IRISH</p>
         <div className={frame.imgSection}>
           {content.map((item, i) => (
-            <div key={i} className="mx-4">
+            <div
+              key={i}
+              className="mx-4"
+              data-aos="zoom-out"
+              data-aos-duration={`${1000 * i}`}
+            >
               <img
                 src={item.img}
                 alt="recipies"
@@ -39,6 +44,7 @@ function Frame7() {
                 layout="fixed"
                 width={270}
                 height={250}
+                className="cover"
               />
               <p>LOREM ISPUM</p>
             </div>

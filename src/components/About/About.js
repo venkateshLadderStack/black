@@ -16,13 +16,20 @@ function About({ data }) {
             }
           >
             <div
+              data-aos="fade-up"
+              data-aos-duration="850"
               className={`${globalStyle.individual} col-lg-6 col-md-12 col-sm-12 col-12`}
             >
               <h4>{item.title}</h4>
               <h6>{item.subTitle}</h6>
               <p>{item.desc}</p>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+
+            <div
+              className="col-lg-6 col-md-12 col-sm-12 col-12"
+              data-aos="zoom-in"
+              data-aos-duration="750"
+            >
               <img
                 src={item.img}
                 width={

@@ -47,9 +47,9 @@ function Frame6() {
   return (
     <>
       <div className="row d-flex justify-content-between align-items-center">
-        {data.allFile.edges.map(({ node }) => (
+        {data.allFile.edges.map(({ node }, i) => (
           <div className="col-lg-2 col-md-12 col-sm-12 col-12 my-2">
-            <>
+            <div data-aos="zoom-in-up" data-aos-duration={`${750 * i}`}>
               <Img
                 style={
                   width < 600
@@ -61,7 +61,7 @@ function Frame6() {
                 fluid={node.childImageSharp.fluid}
                 alt={node.base}
               />
-            </>
+            </div>
           </div>
         ))}
       </div>

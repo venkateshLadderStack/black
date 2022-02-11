@@ -2,7 +2,7 @@ import React from "react"
 import * as home from "../styles/home.module.css"
 import Button from "./Button"
 import useWindowSize from "../../hooks/useWindowSize"
-import homeImg from "../images/home_img.png"
+import homeImg from "../images/hom1.png"
 import homeImg2 from "../images/home_img2.png"
 
 const content = [
@@ -44,9 +44,15 @@ const Section = () => {
                   : { flexDirection: "row" }
               }
             >
-              <div className={home.image}>
+              <div
+                className={home.image}
+                data-aos="zoom-in-up"
+                data-aos-easing="linear"
+                data-aos-duration="750"
+              >
                 <img
                   src={item.img}
+                  className="cover br_25"
                   width={
                     width < 350
                       ? 300
@@ -68,7 +74,12 @@ const Section = () => {
                   alt="home"
                 />
               </div>
-              <div className={home.content}>
+              <div
+                className={home.content}
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="750"
+              >
                 <h1>{item.title}</h1>
                 <p>{item.desc}</p>
                 <Button classN="green" name="Where to Find Us" />

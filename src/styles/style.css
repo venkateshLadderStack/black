@@ -235,3 +235,11 @@ html body {
   height: 250px;
   margin-top: 25px;
 }
+
+.cover {
+  object-fit: cover;
+}
+
+.br_25 {
+  border-radius: 25px;
+}

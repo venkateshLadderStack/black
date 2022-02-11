@@ -25,7 +25,12 @@ const Frame5 = () => {
     <div className="container">
       <div className={home.frame5}>
         {content.map((item, i) => (
-          <div key={i} className={home.frame}>
+          <div
+            key={i}
+            className={home.frame}
+            data-aos="zoom-in"
+            data-aos-duration={`${1250 * i}`}
+          >
             <img src={item.img} height={273.1} alt="" />
             <h3>{item.title}</h3>
             <Button classN="green" name="Learn more" />

@@ -8,7 +8,7 @@ import "../../node_modules/video-react/dist/video-react.css"
 import { ControlBar, Player } from "video-react"
 const Banner = () => {
   return (
-    <>
+    <div className={banner.wrapper}>
       <div className={banner.vedioArea}>
         <Player
           poster={bannerImg}
@@ -20,20 +20,21 @@ const Banner = () => {
         >
           <ControlBar disableCompletely autoHide={true} />
         </Player>
-      </div>
-      <div className={banner.contentArea}>
-        <div className={banner.content}>
-          <div className="ms-5">
-            <img src={sign_img} width={330} height={163} alt="" />
-          </div>
-          <div className={banner.button}>
-            <div className="me-3">
-              <Button name="Learn more" />
+        <div className={banner.contentArea}>
+          <div className={banner.content}>
+            <div className="ms-5">
+              <img src={sign_img} width={330} height={163} alt="" />
             </div>
-            <Button classN="green" name="Where to Find Us" />
+            <div className={banner.button}>
+              <div className="me-3">
+                <Button name="Learn more" />
+              </div>
+              <Button classN="green" name="Where to Find Us" />
+            </div>
           </div>
         </div>
       </div>
+
       {/* <div
         style={{
           position: "relative",
@@ -83,7 +84,7 @@ const Banner = () => {
           allowFullScreen
         />
       </div> */}
-    </>
+    </div>
   )
 }
 

@@ -1,11 +1,12 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/Layout/Layout"
 import about1 from "../images/recipies/recipie1.png"
 import about2 from "../images/recipies/recipie2.png"
-import About from "../components/About/About.js"
+import AboutComponent from "../components/About/About.js"
 import * as globalStyle from "../styles/global.module.css"
 import InstaFeed from "../components/InstaFeed"
 import Seo from "../components/seo"
+import AOS from "aos"
 
 const aboutData = [
   {
@@ -22,7 +23,11 @@ const aboutData = [
   },
 ]
 
-function about() {
+const About = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <>
       <Seo title="About" description="Black Irish" />
@@ -35,7 +40,7 @@ function about() {
             <div className={globalStyle.border}></div>
           </div>
           <div className="container my-5">
-            <About data={aboutData} />
+            <AboutComponent data={aboutData} />
           </div>
           <div className="my-5">
             <InstaFeed />
@@ -46,4 +51,4 @@ function about() {
   )
 }
 
-export default about
+export default About

@@ -9,11 +9,10 @@ function products() {
       <Seo title="Products" description="Black Irish" />
 
       <Layout>
-        <div className={globalStyle.page}>
-          <div className={globalStyle.pageTitle}>
-            <h1>Products</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-12"></div>
           </div>
-          <div className={globalStyle.border}></div>
         </div>
       </Layout>
     </>
